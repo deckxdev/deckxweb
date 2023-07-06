@@ -1,0 +1,38 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+    height:80vh;
+  
+  }
+  
+  .capsule-pink{
+    background-color: #FF2D55;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .navbar{
+    display: flex;
+    align-content: space-between;
+  }
+  
+  .spacer{
+    flex-grow: 1;
+  }
+  
+  .main-block{
+    /* border:2px solid blue; */
+  }
+  
+  a {
+    color: white;
+  }
