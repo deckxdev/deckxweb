@@ -8,13 +8,7 @@ var logger = require('morgan');
 var usersRouter = require('./routes/users');
 var AASSRouter = require('./routes/AASS');
 
-const port = 3005
-
 var app = express();
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
