@@ -26,9 +26,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/',express.static("public"));
+app.use('/',express.static("public/index"));
+app.use('/index',function (req, res){
+  res.redirect('/');
+});
+app.use('/pack/*',function (req, res){
+  res.redirect('/');
+});
 app.use('/contact',express.static("public/contact"));
 app.use('/apple-app-site-association', AASSRouter);
+app.use('/*',express.static("public/error"));
 
 // catch 404 and forward to error handl
 app.use(function(req, res, next) {
