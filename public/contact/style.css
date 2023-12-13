@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Fira Sans";
+  src: url('fonts/Silkscreen-Bold.ttf')format('truetype'),;
+  src: url('fonts/Silkscreen-Regular.ttf') format('truetype');
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -14,9 +20,9 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
-  background: #141414;
-  color: #ffffff;
+  font-family: "Silkscreen","Roboto", sans-serif;
+  background: black;
+  color: #AD9A68;
   overflow: hidden;
 }
 
@@ -33,7 +39,7 @@ body {
 .main-navbar .logo {
   font-size: 3rem;
   font-weight: 700;
-  color: #fb3255;
+  color: #AD9A68;
 }
 
 .main-navbar .logo a {
@@ -50,7 +56,7 @@ body {
 .main-menu ul a {
   font-size: 2rem;
   text-decoration: underline;
-  color: #dddddd;
+  color: #AD9A68;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -79,17 +85,17 @@ body {
 .container h1 {
   font-size: 6rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #AD9A68;
   margin-bottom: 3rem;
 }
 
 .container .main-btn {
   font-size: 2rem;
   font-weight: 500;
-  color: #ffffff;
+  color: black;
   margin-bottom: 4rem;
   padding: 1.5rem 3.5rem;
-  background: #fb3255;
+  background: #AD9A68;
   border: 0;
   outline: 0;
   text-decoration: none;
@@ -107,12 +113,12 @@ body {
 }
 
 .container .main-btn:hover {
-  background: #c8102e;
+  background: #AD9A68;
 }
 
 .container p {
   font-size: 1.6rem;
-  color: #eaeaea;
+  color: #AD9A68;
   font-weight: 400;
   letter-spacing: 0.06rem;
 }
@@ -123,13 +129,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fb3255;
+  background: #AD9A68;
   padding: 0 3rem;
 }
 
 footer p {
   font-size: 1.6rem;
-  color: #ffffff;
+  color: black;
   letter-spacing: 00.06rem;
 }
 
@@ -159,21 +165,21 @@ footer p a:hover {
 
 .contact-container h1 {
   font-size: 4rem;
-  color: #ffffff;
+  color: #AD9A68;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
 .contact-container h2 {
   font-size: 3rem;
-  color: #ffffff;
+  color: #AD9A68;
   font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .contact-container h3 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #AD9A68;
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
