@@ -27,14 +27,14 @@ app.use('/pack/*',function (req, res){
 });
 app.use('/contact',express.static("public/contact"));
 app.use('/apple-app-site-association', AASSRouter);
-app.use('/*',express.static("public/error"));
+app.use('/*',express.static("/index"));
 
 // catch 404 and forward to error handl
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
+// error handler 
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
@@ -42,7 +42,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.redirect('/');
 });
 
 module.exports = app;
