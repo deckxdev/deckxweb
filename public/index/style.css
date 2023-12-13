@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "Silkscreen";
-  src: url('fonts/Silkscreen-Bold.ttf')format('truetype'),;
-  src: url('fonts/Silkscreen-Regular.ttf') format('truetype');
+  src: url('./fonts/Silkscreen-Bold.ttf')format('truetype'),;
+  src: url('./fonts/Silkscreen-Regular.ttf') format('truetype');
 }
 
 html {
