@@ -26,6 +26,8 @@ app.use('/pack/*',function (req, res){
   res.redirect('/');
 });
 app.use('/contact',express.static("public/contact"));
+app.use('/termsandconditions',express.static("public/terms_and_conditions"));
+app.use('/privacypolicy',express.static("public/privacy_policy"));
 app.use('/apple-app-site-association', AASSRouter);
 app.use('/*',express.static("/index"));
 
